@@ -1,32 +1,31 @@
-# Rust - Build a CRUD API with SQLX and PostgreSQL
+## Introduction
 
-In this article, you'll learn how to build a CRUD API in Rust using SQLX, Actix-web, and PostgreSQL. Learning how to build a CRUD API as a developer will equip you with valuable skills for building robust, maintainable, and scalable applications.
+This example shows how to deploy Rust code on Netlify Functions.
 
-![Rust - Build a CRUD API with SQLX and PostgreSQL](https://codevoweb.com/wp-content/uploads/2023/01/Rust-Build-a-CRUD-API-with-SQLX-and-PostgreSQL.webp)
+Functions can be deployed using [Netlify's CLI](https://ntl.fyi/cli) as well as the Netlify Build environment.
 
-## Topics Covered
+You can copy this repository and deploy it to Netlify by clicking the button below.
 
-- Run the Rust SQLX Project Locally
-- Run the Rust SQLX API with a React.js App
-- Setup the Rust Project
-- Setup PostgreSQL and pgAdmin with Docker
-- Create and Migrate the Database Queries
-- Create the SQLX Database Model
-- Create the Validation Schemas
-- Create CRUD Route Functions
-    - Fetch All Records
-    - Add New Record
-    - Retrieve a Single Record
-    - Edit an Existing Record
-    - Delete a Record
-    - Merge the Route Functions
-- Register the Routes and Add CORS
-- Test the Rust CRUD API
-    - Perform the CREATE Operation
-    - Perform the UPDATE Operation
-    - Perform the READ Operation
-    - Perform the DELETE Operation
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/rust-functions-example"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
+After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete.
 
-Read the entire article here: [https://codevoweb.com/rust-build-a-crud-api-with-sqlx-and-postgresql/](https://codevoweb.com/rust-build-a-crud-api-with-sqlx-and-postgresql/)
+## Build & Deployment
 
+### Deploying with CLI
+
+You need to install Netlify's CLI first:
+
+```
+npm install -g netlify-cli
+```
+
+Then run the following command:
+
+```
+netlify deploy --build
+```
+
+### Deploying with Netlify Build
+
+Create a new Netlify site and link it to your repository. Netlify will detect the Rust functions automatically, build and deploy them for you.
